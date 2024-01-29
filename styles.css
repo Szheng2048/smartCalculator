@@ -1,0 +1,39 @@
+.entireCalculator {
+    background-color:aqua;
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns:(1fr,4fr);
+    border-radius:15px;
+    gap: 20px;
+    padding: 15px;
+}
+
+.calculatorScreen {
+    background-color:black;
+    color:white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.calculatorBody {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 20px;
+}
+
+.calculatorButtons {
+    background-color: rgb(18, 105, 76);
+    border-radius: 15px;
+    padding:10px;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+/* changing the positioning of buttons*/
+
