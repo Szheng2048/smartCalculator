@@ -1,9 +1,9 @@
 .entireCalculator {
     background-color:aqua;
     height: 500px;
-    width: 500px;
+    width: 400px;
     display: grid;
-    grid-template-columns:(1fr,4fr);
+    grid-template-columns:(1fr,6fr);
     border-radius:15px;
     gap: 20px;
     padding: 15px;
@@ -14,9 +14,14 @@
     color:white;
     border-radius: 15px;
     display: flex;
+    height:auto;
     align-items: center;
     justify-content: end;
     padding-right: 10px;
+}
+/*gives the buttons a hover effect  */
+button:hover {
+    cursor: pointer;
 }
 
 .calculatorBody {
@@ -29,11 +34,17 @@
 .calculatorButtons {
     background-color: rgb(18, 105, 76);
     border-radius: 15px;
-    padding:10px;
     color:white;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 /* changing the positioning of buttons*/
-
+#equals{
+    grid-row:2 / 6;
+    grid-column: 4;
+}
+#clear{
+    grid-row: 5;
+    grid-column: 3;
+}
